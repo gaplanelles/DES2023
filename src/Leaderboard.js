@@ -1,8 +1,6 @@
 import React, { Suspense, startTransition, useState, useEffect } from 'react';
 import { fetchData } from "./fetchData";
-import rbf1photo from "./image/f1RB.jpg";
-import verstappenPhoto from "./image/verstapen.jpg";
-import Red_Bull_background from "./image/Red_Bull_background.png";
+
 import des from "./image/DESbanner.PNG";
 import './App.css';
 

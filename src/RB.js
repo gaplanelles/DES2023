@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+
 import des from "./image/DESbanner.PNG";
-import rbf1photo from "./image/f1RB.jpg";
-import verstappenPhoto from "./image/verstapen.jpg";
+
 import './RB.css';
 
 function OtherPage() {
   const [email, setUserEmail] = useState('');
-  const [userName, setUserName] = useState('test');
+
   const [points, setPoints] = useState('51');
  
 
@@ -17,7 +16,7 @@ function OtherPage() {
   const [mil, setMilliseconds] = useState('');
 
 
-  const { valor } = useParams();
+
   const activity = 'demo_rb'
 
   useEffect(() => {
@@ -46,7 +45,7 @@ function OtherPage() {
       setSeconds('');
       setMilliseconds('');
       setUserEmail('');
-      setUserName('');
+
       setPoints('');
     } catch (error) {
       console.error(error);

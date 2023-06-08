@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import des from "./image/DESbanner.PNG";
-import rbf1photo from "./image/f1RB.jpg";
-import verstappenPhoto from "./image/verstapen.jpg";
+
 import './QR.css';
 
 function OtherPage() {
   const [email, setUserEmail] = useState('');
-  const [userName, setUserName] = useState('test');
+
   const [points, setPoints] = useState('51');
   
 
@@ -38,7 +37,7 @@ function OtherPage() {
       console.log(response.data);
 
       setUserEmail('');
-      setUserName('');
+
       setPoints('');
     } catch (error) {
       console.error(error);
